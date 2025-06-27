@@ -51,20 +51,20 @@ while Flag_Of_Search == 1
         break;
     end
     if (Flag_Partial_Concentration == 1) && (~isempty(RC_All))
-        [A_Array,S_,A,Flag_Of_Search,Appendix,Flag_Central,S_Array,Appendix_Array,Flag_Partial_Concentration,RC_All] = Restart_And_Partial_Concentration(Carriers,S_Final,RC_All);  % 重新开始搜索并且局部集中一下
+        [A_Array,S_,A,Flag_Of_Search,Appendix,Flag_Central,S_Array,Appendix_Array,Flag_Partial_Concentration,RC_All] = Restart_And_Partial_Concentration(Carriers,S_Final,RC_All);  
     end
-    Flag_Of_Search = If_Repeat_Action(A,S_,Flag_Of_Search);  % 检查该动作是否之前出现过
+    Flag_Of_Search = If_Repeat_Action(A,S_,Flag_Of_Search);  
     if Flag_Of_Search == 0
-        [Flag_Back,S,S_Array,A_Array,Appendix,Appendix_Array,Memory_Bank,If_Random] = Take_A_Step_Backward(S_Array,A_Array,Appendix_Array,1,Carriers,Memory_Bank);  % 取不出动作了，回退一个状态 Flag_Back=1代表回退成功，Flag_Back=0代表无法回退
+        [Flag_Back,S,S_Array,A_Array,Appendix,Appendix_Array,Memory_Bank,If_Random] = Take_A_Step_Backward(S_Array,A_Array,Appendix_Array,1,Carriers,Memory_Bank); 
         if ~Flag_Back
-            Flag_Of_Search = 0;  % Flag_Of_Search=0代表搜索失败了
+            Flag_Of_Search = 0;  
             break;
         else
             Flag_Of_Search = 1;
         end
     else
-        [S,S_Array] = Result(S_,A,Flag_Of_Search,S_Array);  % 通过Result函数用动作A将状态S_推进到S
-        [S_Array,A] = Amendment_A_S(S_Array,A,Flag_Of_Search);  % 将Flag_Of_Search=2时的一种情况修正
+        [S,S_Array] = Result(S_,A,Flag_Of_Search,S_Array);  
+        [S_Array,A] = Amendment_A_S(S_Array,A,Flag_Of_Search);  
         A_Array(end+1,1) = {A};
         S_Array(end+1,1) = {S};
         Appendix_Array(end+1,1) = {Appendix};
@@ -79,8 +79,10 @@ if Flag_Central==1
     [A,S,A_Array,S_Array,Flag_Of_Search] = Centralize_Carriers(Carriers,S_Final);
 end
 
-if Flag_Of_Search  % 如果搜索成功的话
-    %[A_Array,S_Array] = Simplify_The_Result(A_Array,S_Array,Initial_State(Carriers),S_Final);
+if Flag_Of_Search
+    %[A_Array,S_Array] =
+    %Simplify_The_Result(A_Array,S_Array,Initial_State(Carriers),S_Final);
+    %%这个函数已经写好了，用来简化优化结果，但是有些时候不一定对，需要进一步调整
     Print_Successful_Result(A_Array,S_Array,S_Final,Carriers);
     Draw_Successful_Result(A_Array,S_Array,S_Final,outputMatrix,outputMatrix_G,outputMatrix_Cell);
     %Save_The_Results(A_Array,S_Array,FilePath); 
