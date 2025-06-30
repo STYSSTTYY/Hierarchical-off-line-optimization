@@ -50,12 +50,14 @@ The repository contains **all source code (pure MATLAB)** *plus* the complete se
 2. **Open MATLAB R2022b and load main.m**
 
 3. **Start the parallel pool**
-   
+
+   ```bash
    parpool;   % or click “Parallel” → “Start Parallel Pool”
 
 4. **Run a specific example**
    In main.m line 22, change
 
+   ```bash
    Example_name = 'Example21';
 
    to whichever examples you want (e.g. 'Example19'), then press **Run**.
