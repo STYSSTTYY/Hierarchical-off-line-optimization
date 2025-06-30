@@ -26,6 +26,7 @@ The repository contains **all source code (pure MATLAB)** *plus* the complete se
 ├── main.m
 ├── LICENSE
 └── README.md # ← you are here
+```
 
 ---
 
@@ -59,7 +60,10 @@ The repository contains **all source code (pure MATLAB)** *plus* the complete se
    In main.m line 22, change
 
    ```bash
-   Example_name = 'Example21'; % to whichever examples you want (e.g. 'Example19'), then press Run.
+   Example_name = 'Example21';
+   ```
+
+    to whichever examples you want (e.g. 'Example19'), then press Run.
 
 ## Contact
 
