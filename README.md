@@ -17,6 +17,7 @@ The repository contains **all source code (pure MATLAB)** *plus* the complete se
 ---
 
 ## Directory layout
+```text
 ├── Some_Examples/ # ⇦ All example inputs + reference results
 │ ├── Example1/
 │ ├── ...
