@@ -18,13 +18,14 @@ The repository contains **all source code (pure MATLAB)** *plus* the complete se
 
 ## Directory layout
 ```text
-├── Some_Examples/ # ⇦ All example inputs + reference results
-│ ├── Example1/
-│ ├── ...
-│ └── Example21/
-├── code/ # Core algorithm (MATLAB functions)
-├── main.m
-├── LICENSE
+├── Hierarchical-off-line-optimization/
+│  ├── Some_Examples/ # ⇦ All example inputs + reference results
+│  │ ├── Example1/
+│  │ ├── ...
+│  │ └── Example21/
+│  ├── code/ # Core algorithm (MATLAB functions)
+│  ├── main.m
+│  └── LICENSE
 └── README.md # ← you are here
 ```
 
