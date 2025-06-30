@@ -24,8 +24,8 @@ The repository contains **all source code (pure MATLAB)** *plus* the complete se
 │  │ ├── ...
 │  │ └── Example21/
 │  ├── code/ # Core algorithm (MATLAB functions)
-│  ├── main.m
-│  └── LICENSE
+│  └── main.m
+├── LICENSE
 └── README.md # ← you are here
 ```
 
