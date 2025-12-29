@@ -2,7 +2,7 @@
 
 Implementation of the algorithm proposed in
 
-> **“Explicit Hierarchical Measurement Scheduling for Multi-UAV Cooperative Navigation.”**  
+> **“Energy-Efficient Multi-UAV Cooperative Localization with Sequential Optimization of Communication and Fusion Topologies.”**  
 > * *
 
 The repository contains **all source code (pure MATLAB)** *plus* the complete set of simulation data and reference results used in the paper.
