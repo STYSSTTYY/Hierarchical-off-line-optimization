@@ -11,7 +11,7 @@ The repository contains **all source code (pure MATLAB)** *plus* the complete se
 
 ## ✨ Highlights
 * **One-click examples** under `Some_Examples/`; nothing else to download.  
-* **Examples 17 – 21** exactly reproduce the simulation cases reported in the paper.  
+* **Examples 24 – 28** exactly reproduce the simulation cases reported in the paper.  
 * **Fully parallelised**: exploits MATLAB’s Parallel Computing Toolbox for faster runs.
 
 ---
@@ -22,7 +22,7 @@ The repository contains **all source code (pure MATLAB)** *plus* the complete se
 │  ├── Some_Examples/ # ⇦ All example inputs + reference results
 │  │ ├── Example1/
 │  │ ├── ...
-│  │ └── Example21/
+│  │ └── Example28/
 │  ├── code/ # Core algorithm (MATLAB functions)
 │  └── main.m
 ├── LICENSE
